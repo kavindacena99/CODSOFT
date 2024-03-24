@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing: border-box;margin: 0;}
+        .firstnav{
+            display: flex;
+            width: 100%;
+            height: 70px;
+            font-family: "Madimi One", sans-serif;
+            background-image:linear-gradient(to right,rgb(228, 11, 195),rgb(232, 253, 73));
+        }
+        .firstul{
+            display: flex;
+            list-style: none;
+            margin: 25px;
+        }
+        .firstli{
+            margin-left: 18px;
+        }
+        .r-btn{
+            height: 40px;
+            border-radius: 12px;
+            border: 2px solid white;
+            background-color: pink;
+            float: right;
+            margin: 12px;
+            font-size: 18px;
+            color: white;
+        }
+        .r-btn:hover{
+            height: 40px;
+            border-radius: 12px;
+            border: 2px solid pink;
+            background-color: white;
+            float: right;
+            margin: 12px;
+            font-size: 18px;
+            color: pink;
+            transition: 0.9s;
+        }
+        .secondnav{
+            display: flex;
+            width: 100%;
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+            justify-content: space-between;
+            font-family: "Madimi One", sans-serif;
+        }
+        .secondnav h1{
+            margin: 20px;
+            font-size: 30px;
+            color: black;
+        }
+        .secondul{
+            list-style: none;
+            display: flex;
+            margin-top: 25px;
+            margin-right: 6px;
+        }
+        .secondli{
+            margin-left: 10px;
+        }
+        .link1{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .link1:hover{
+            color: rgb(14, 147, 152);
+            transition: 0.8s;
+        }
+        .crsl{
+            width: 100%;
+            height: 100vh;
+        }
+        .midsection{
+            width: 100%;
+            display: flex;
+        }
+        .side1{
+            padding-left: 60px;
+            padding-top: 40px;
+            background-color: rgb(214, 243, 243);
+            width:55%;
+        }
+        .side1h1{
+            font-family: "Madimi One", sans-serif;
+        }
+        .side2{
+            width: 45%;
+        }
+        .underline{
+            margin-bottom: 15px;
+            width: 160px;
+            height: 5px;
+            background-image:linear-gradient(to right,rgb(228, 11, 195),rgb(232, 253, 73));
+        }
+        .side1h3{
+            margin-bottom: 10px;
+            margin-left: 5px;
+            font-family: "Madimi One", sans-serif;
+        }
+        .side1p{
+            margin-left: 6px;
+            margin-right: 19px;
+            color:grey;
+            font-family: "Madimi One", sans-serif;
+        }
+        .read{
+            margin: 40px;
+            border: 1px solid wheat;
+            width: 120px;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 17px;
+            cursor: pointer;
+            color: white;
+            background-image: linear-gradient(to right,rgb(228, 11, 195),rgb(232, 253, 73));
+        }
+        .rpic{
+            width: 100%;
+            height: 90vh;
+        }
+        .service{
+            padding-left: 60px;
+            padding-top: 40px;
+        }
+        .underline2{
+            margin-bottom: 15px;
+            width: 200px;
+            height: 5px;
+            background-image:linear-gradient(to right,rgb(228, 11, 195),rgb(232, 253, 73));
+        }
+        .mainsides{
+            width: 100%;
+            display: flex;
+        }
+        .as{
+            width: 30%;
+            padding-right: 20px;
+        }
+        .s{
+            width: 100%;
+        }
+        .topic{
+            padding: 6px 0 15px 5px;
+            border-radius: 10px;
+            width: 100%;
+            height: 30px;
+            background-color: aqua;
+            font-family: "Madimi One", sans-serif;
+            color: white;
+            background-image: linear-gradient(to right,rgb(228, 11, 195),rgb(232, 253, 73));
+        }
+        footer{
+            height: 40vh;
+            width: 100%;
+            background-color: bisque;
+        }
+        .copyrights{
+            padding-top:50px ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="firstnav">
+        <ul class="firstul">
+            <li class="firstli">+600 3360 9886</li>
+            <li class="firstli">landing@page.lk</li>
+        </ul>
+        <button class="r-btn">Request a Contact</button>
+    </nav>
+    <nav class="secondnav">
+        <h1>Landing Page</h1>
+        <ul class="secondul">
+            <li class="secondli"><a class="link1" href="#">Home</a></li>
+            <li class="secondli"><a class="link1" href="#">Blog</a></li>
+            <li class="secondli"><a href="#" class="link1">Pages</a></li>
+            <li class="secondli"><a href="#" class="link1">Contact</a></li>
+            <li class="secondli" id="buy-btn"><a href="#" class="link1">Buy Now</a></li>
+        </ul>
+    </nav>
+    <div class="carosol">
+        <img src="1.jpg" alt="" onclick="changeImage()" class="crsl">
+        <img src="2.jpg" alt="" onclick="changeImage()" class="crsl">
+    </div>
+    <div class="midsection">
+        <div class="side1">
+            <h1 class="side1h1">ABOUT US</h1>
+            <div class="underline"></div>
+            <h3 class="side1h3">15years,we passionate about achieving better results for our clients</h3>
+            <p class="side1p">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem consequatur dicta illum est. Quaerat dolore, ducimus natus nemo maiores, voluptatem, delectus laborum architecto dolores quam error atque aspernatur consectetur laboriosam esse nostrum. Odit eveniet adipisci deleniti quo maiores quibusdam voluptate, minus iste? Dolores amet nulla est laborum reprehenderit provident, consectetur dolorum maxime nesciunt blanditiis recusandae porro delectus, excepturi aspernatur! Cumque sint voluptatum debitis repellendus excepturi. Praesentium fuga cumque nobis ducimus, officiis inventore, assumenda accusantium dolorum impedit, aliquam alias? Libero deleniti consequuntur veritatis, consectetur a aspernatur debitis nisi ex sed nemo, mollitia vero unde nihil harum recusandae beatae vel nostrum sit perspiciatis molestiae quidem. Hic accusamus omnis dicta, rem velit dignissimos pariatur id minima quaerat quod dolore fugiat explicabo sapiente?</p>
+            <button class="read">Read More</button>
+        </div>
+        <div class="side2">
+            <img src="r.jpg" alt="" class="rpic">
+        </div>
+    </div>
+    <div class="service">
+        <h1 class="side1h1">OUR SERVICES</h1>
+        <div class="underline2"></div>
+        <br>
+        <div class="mainsides">
+            <div class="as">
+                <img src="s.jpg" alt="" class="s">
+                <div class="topic">User Experience</div>
+            </div>
+            <div class="as">
+                <img src="s.jpg" alt="" class="s">
+                <div class="topic">Creative Design</div>
+            </div>
+            <div class="as">
+                <img src="s.jpg" alt="" class="s">
+                <div class="topic">Retina Ready</div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <h2 class="copyrights">&copy; All rigths reseved</h2>
+    </footer>
+    <script>
+        let i = 0;
+        document.getElementsByClassName("crsl")[1].style.display = "none";
+        document.getElementsByClassName("crsl")[0].style.display = "block";
+        function changeImage(){
+            if(i == 0){
+                document.getElementsByClassName("crsl")[1].style.display = "block";
+                document.getElementsByClassName("crsl")[0].style.display = "none";
+                i = 1;
+            }else{
+                document.getElementsByClassName("crsl")[1].style.display = "none";
+                document.getElementsByClassName("crsl")[0].style.display = "block";
+                i = 0;
+            }
+        }
+    </script>
+</body>
+</html>
