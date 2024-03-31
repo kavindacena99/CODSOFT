@@ -1,0 +1,24 @@
+*{box-sizing: border-box;}
+
+.cal{
+    padding: 15%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(142, 139, 102);
+}
+button{
+    margin: 15px;
+    width: 100px;
+    height: 50px;
+    font-size: larger;
+    border: 0px;
+    font-weight: bold;
+    background-color: rgb(12, 180, 124);
+
+}
+.result{
+    margin-left: 20px;
+    background-color: azure;
+    width: 480px;
+    padding: 5px;
+}
