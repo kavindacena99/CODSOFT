@@ -1,0 +1,3 @@
+create table users(userid INT primary key auto_increment,username varchar(255),firstname varchar(255),lastname varchar(255),mails varchar(255),pswd varchar(255));
+
+create table blogs(blogid INT primary key auto_increment,userid INT,title varchar(255),postedtime Date,content text);
